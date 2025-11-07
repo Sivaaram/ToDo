@@ -23,11 +23,8 @@ function App() {
   }
   return (
     <div className="App text-center py-4">
-      <div className='flex justify-center'>
-      <img className='h-12 w-12' src="./src/assets/icon.png" alt="" />
-      </div>
       <h1 className="text-3xl m-4">To Do List</h1>
-        <input type="text" className='border-fluid border-1 rounded-2xl py-4 px-4 w-2xl' placeholder='Add a New Task' value={todo} onChange={(e)=>setTodo(e.target.value)}
+        <input type="text" className='border-fluid border-1 rounded-2xl py-4 px-4 w-sm' placeholder='Add a New Task' value={todo} onChange={(e)=>setTodo(e.target.value)}
         onKeyPress={(e) => e.key === "Enter" && addTodo()} />
         <button className='border px-4 py-4 bg-blue-500 text-white rounded-2xl hover:bg-blue-600 ml-2'  onClick={addTodo}>Add</button>
       <ul>        
